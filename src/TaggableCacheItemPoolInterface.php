@@ -49,7 +49,7 @@ interface TaggableCacheItemPoolInterface extends CacheItemPoolInterface
      *
      * @return TaggableCacheItemInterface
      */
-    public function getItem($key);
+    public function getItem(string $key);
 
     /**
      * {@inheritdoc}
