@@ -31,7 +31,7 @@ interface TaggableCacheItemPoolInterface extends CacheItemPoolInterface
      *
      * @return bool True on success
      */
-    public function invalidateTag($tag);
+    public function invalidateTag(string $tag): bool;
 
     /**
      * Invalidates cached items using tags.
@@ -42,19 +42,19 @@ interface TaggableCacheItemPoolInterface extends CacheItemPoolInterface
      *
      * @return bool True on success
      */
-    public function invalidateTags(array $tags);
+    public function invalidateTags(array $tags): bool;
 
     /**
      * {@inheritdoc}
      *
      * @return TaggableCacheItemInterface
      */
-    public function getItem(string $key);
+    public function getItem(string $key): CacheItemInterface;
 
     /**
      * {@inheritdoc}
      *
      * @return array|\Traversable|TaggableCacheItemInterface[]
      */
-    public function getItems(array $keys = []);
+    public function getItems(array $keys = []): array;
 }
