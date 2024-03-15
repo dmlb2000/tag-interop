@@ -13,6 +13,7 @@ namespace Cache\TagInterop;
 
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Cache\InvalidArgumentException;
+use Psr\Cache\CacheItemInterface;
 
 /**
  * Interface for invalidating cached items using tags. This interface is a soon-to-be-PSR.
